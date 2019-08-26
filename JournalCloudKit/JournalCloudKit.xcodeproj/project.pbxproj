@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		864BA82523146F21008FC737 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864BA82423146F21008FC737 /* Entry.swift */; };
+		864BA8272314713B008FC737 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864BA8262314713B008FC737 /* EntryController.swift */; };
+		864BA82A231474C4008FC737 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864BA829231474C4008FC737 /* JournalTableViewController.swift */; };
+		864BA82C231474D4008FC737 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864BA82B231474D4008FC737 /* EntryDetailViewController.swift */; };
 		8679688723146E4A00F8225E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679688623146E4A00F8225E /* AppDelegate.swift */; };
-		8679688923146E4A00F8225E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679688823146E4A00F8225E /* ViewController.swift */; };
 		8679688C23146E4A00F8225E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8679688A23146E4A00F8225E /* Main.storyboard */; };
 		8679688E23146E4A00F8225E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8679688D23146E4A00F8225E /* Assets.xcassets */; };
 		8679689123146E4A00F8225E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8679688F23146E4A00F8225E /* LaunchScreen.storyboard */; };
+		8679689B23146E7B00F8225E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8679689A23146E7B00F8225E /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		864BA82423146F21008FC737 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		864BA8262314713B008FC737 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		864BA829231474C4008FC737 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
+		864BA82B231474D4008FC737 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		8679688323146E4A00F8225E /* JournalCloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCloudKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8679688623146E4A00F8225E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8679688823146E4A00F8225E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8679688B23146E4A00F8225E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8679688D23146E4A00F8225E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8679689023146E4A00F8225E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8679689223146E4A00F8225E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8679689823146E7900F8225E /* JournalCloudKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JournalCloudKit.entitlements; sourceTree = "<group>"; };
+		8679689A23146E7B00F8225E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +38,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8679689B23146E7B00F8225E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		864BA828231473A8008FC737 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				864BA829231474C4008FC737 /* JournalTableViewController.swift */,
+				864BA82B231474D4008FC737 /* EntryDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		8679687A23146E4A00F8225E = {
 			isa = PBXGroup;
 			children = (
 				8679688523146E4A00F8225E /* JournalCloudKit */,
 				8679688423146E4A00F8225E /* Products */,
+				8679689923146E7B00F8225E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +74,57 @@
 		8679688523146E4A00F8225E /* JournalCloudKit */ = {
 			isa = PBXGroup;
 			children = (
-				8679688623146E4A00F8225E /* AppDelegate.swift */,
-				8679688823146E4A00F8225E /* ViewController.swift */,
-				8679688A23146E4A00F8225E /* Main.storyboard */,
-				8679688D23146E4A00F8225E /* Assets.xcassets */,
-				8679688F23146E4A00F8225E /* LaunchScreen.storyboard */,
-				8679689223146E4A00F8225E /* Info.plist */,
+				8679689823146E7900F8225E /* JournalCloudKit.entitlements */,
+				8679689F23146EC100F8225E /* UI */,
+				864BA828231473A8008FC737 /* View Controllers */,
+				8679689E23146EB400F8225E /* Model Controllers */,
+				8679689D23146EAD00F8225E /* Models */,
+				8679689C23146EA800F8225E /* Resources */,
 			);
 			path = JournalCloudKit;
+			sourceTree = "<group>";
+		};
+		8679689923146E7B00F8225E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8679689A23146E7B00F8225E /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8679689C23146EA800F8225E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8679688623146E4A00F8225E /* AppDelegate.swift */,
+				8679688D23146E4A00F8225E /* Assets.xcassets */,
+				8679689223146E4A00F8225E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8679689D23146EAD00F8225E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				864BA82423146F21008FC737 /* Entry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8679689E23146EB400F8225E /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				864BA8262314713B008FC737 /* EntryController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		8679689F23146EC100F8225E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8679688A23146E4A00F8225E /* Main.storyboard */,
+				8679688F23146E4A00F8225E /* LaunchScreen.storyboard */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +159,14 @@
 				TargetAttributes = {
 					8679688223146E4A00F8225E = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,7 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8679688923146E4A00F8225E /* ViewController.swift in Sources */,
+				864BA8272314713B008FC737 /* EntryController.swift in Sources */,
+				864BA82523146F21008FC737 /* Entry.swift in Sources */,
+				864BA82A231474C4008FC737 /* JournalTableViewController.swift in Sources */,
+				864BA82C231474D4008FC737 /* EntryDetailViewController.swift in Sources */,
 				8679688723146E4A00F8225E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +356,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JournalCloudKit/JournalCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WP5X762NJ;
-				INFOPLIST_FILE = JournalCloudKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalCloudKit/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,9 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JournalCloudKit/JournalCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WP5X762NJ;
-				INFOPLIST_FILE = JournalCloudKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalCloudKit/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
